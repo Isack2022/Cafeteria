@@ -33,6 +33,7 @@ header{
     /*Posição do plano de fundo, onde o primeiro valor é x, ou seja,
     posição horizontal e o segundo valor é y, posição vertical*/
     background-position: 0px -70px; 
+    background-repeat: no-repeat; /*Atributo para não repetir a imagem*/
     transition: ease 1s;
     filter: saturate(1);
     
@@ -187,10 +188,9 @@ h1{
 }
 
 .sub-h3{
-    font-size: 20pt;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 0px;
-    text-transform: uppercase;
+  font-size: 15pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0px;
 }
 
 .sub-h2{
@@ -318,7 +318,7 @@ section .uma-fracao ion-icon{
 
 .cat-cardapio{
   padding: 15px 20px;
-  border: 1px solid #9c9c9c;
+  border: 1px solid #9c9c9cd5;
   border-radius: 40px;
   margin: 10px 10px;
 }
@@ -336,13 +336,20 @@ section .uma-fracao ion-icon{
 
 .itens-cardapio{
   width: 250px;
-  padding: 20px;
+  height: 400px;
+  margin: 20px 10px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #fff;
-  margin: 20px;
   box-shadow: 0px 8px 13px #665;
   transition: ease 1s;
   cursor: pointer;
+  align-items: center;
+}
+
+.itens-cardapio img{
+    width: 100%;
+    height: 160px;
 }
 
 .img-redodada{
